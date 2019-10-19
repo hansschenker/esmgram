@@ -10,6 +10,7 @@ import { AppComponent } from "./app.component";
 import { PostsModule } from "./posts/posts.module";
 import { HomePageModule } from "./home/home.module";
 import { RouteReuseStrategy } from "@angular/router";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { RouteReuseStrategy } from "@angular/router";
     AppRoutingModule,
     PostsModule,
     HomePageModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [
     StatusBar,
